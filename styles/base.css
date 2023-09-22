@@ -10,6 +10,10 @@ html {
     margin: 1em 0;
     }
 
+body {
+  display: grid;
+  place-content: center;
+}
 header {
     text-align: center;
     width: 600px;
@@ -38,10 +42,11 @@ header h1 {
   }
 
 main {
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
     width: 600px;
     margin: 0 auto;
-    padding: 0 20px 20px 20px;
-    border-bottom-style: solid;
   }
 
   h2 {
