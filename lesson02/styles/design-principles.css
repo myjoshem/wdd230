@@ -11,34 +11,43 @@ footer {
 header {
 	padding: .5em .5em;
 	background-color: #048286;
-    color: white;
+    color: whitesmoke;
     text-align: center;
     font-size: larger;
     margin-bottom: 1em;
+    border-color: black;
+    border-style: groove;
+    text-shadow: 2px 2px #131010;
 }
 
 main {
 	display: grid;
     gap: 1em;
     width: 97%;
+    grid-template-columns: auto;
 }
 
-div .card-inner {
-    background-color: rgb(96, 238, 238);
-    padding: 1em 1em;
-    margin: 0;
+.card {
+    background-color: rgb(176, 231, 231);
+    padding: 0 1em 1em 1em;
+    border-radius: 22px 22px 0 0;
+    border-color: black;
+    border-style:ridge;
 }
 
 div img {
     width: 100%;
+    border-color: black;
+    border-style:double;
 }
 
 div h2 {
-    margin: 0;
-    padding: 1em 1em;
+    margin: 0 -.67em 0 -.67em;
     background-color: black;
     border-radius: 20px 20px 0 0;
-    color:rgb(96, 238, 238);
+    color: whitesmoke;
+    padding: 1em 1em 1em 1em;
+    text-shadow: 2px 2px #131010;
 }
 
 footer {
@@ -48,6 +57,10 @@ footer {
     background-color: #048286;
     color: white;
     padding-bottom: .5em;
+    border-color: black;
+    border-style: groove;
+    text-shadow: 2px 2px #131010;
+    
 }
 
 @media (min-width: 650px) {
@@ -55,12 +68,20 @@ footer {
         grid-template-columns: repeat(2, 1fr);
         gap: 1em;
         }
+    .card:nth-child(3) {
+        grid-column: span 2;
+    }
+
 }
 
 @media (min-width: 900px) {
     main {
         grid-template-columns: repeat(3, 1fr);
         gap: 1em;
+    }
+
+    .card:nth-child(3) {
+        grid-column: span 1;
     }
 }
 
