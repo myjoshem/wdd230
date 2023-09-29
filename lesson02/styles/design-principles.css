@@ -33,12 +33,13 @@ main {
     border-radius: 22px 22px 0 0;
     border-color: black;
     border-style:ridge;
+
 }
 
 div img {
     width: 100%;
     border-color: black;
-    border-style:double;
+    border-style: solid;
 }
 
 div h2 {
@@ -63,7 +64,7 @@ footer {
     
 }
 
-@media (min-width: 650px) {
+@media (min-width: 650px) and (max-width: 899px) {
     main {
         grid-template-columns: repeat(2, 1fr);
         gap: 1em;
@@ -80,8 +81,4 @@ footer {
         gap: 1em;
     }
 
-    .card:nth-child(3) {
-        grid-column: span 1;
-    }
 }
-
