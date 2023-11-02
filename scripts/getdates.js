@@ -9,4 +9,11 @@ const day = new Date().getDate();
 const year = new Date().getFullYear();
 document.querySelector('#lastModified').textContent = `${month}/${day}/${year}`; */
 
-document.querySelector('#lastModified').textContent = new Date(document.lastModified);
+const options = {
+        weekday: "Long",
+        month: "numeric",
+  day: "2-digit",		
+        year: "numeric"
+};
+
+document.querySelector('#lastModified').textContent = new Date().toDateString();

@@ -1,0 +1,55 @@
+resizing photos, basic:
+mobile(small): 480px
+tablet(medium): 780px
+desktop(large): 1080px
+
+Here are the best image sizes for WordPress:
+
+Webpage - largest size 1048 banner, 1200 average, 1920 background image
+
+Blog post image size (1200 x 630 pixels)
+Header image size (banner size 1048 x 250 pixels)
+Featured image size (landscape 1200 x 900 pixels)
+Featured image size (portrait 900 x 1200 pixels)
+WordPress background image size (1920 x 1080 pixels)
+Logo image size (200 x 100 pixels)
+Thumbnail image size (150 x 150 pixels)
+
+Tablet - Medium 767px w
+
+
+Mobile - Small
+Hero images: 800 by 1200 pixels
+Banner images: 320 by 480, 300 by 250, and 320 by 50 pixels
+Blog images: 640 by 320 pixels
+The best image resolution for most smartphones is 640 by 320 pixels. You should maintain the aspect ratio of the original image or the output image will be distorted. 
+
+
+Here are some common media query breakpoints: 
+Mobile devices: 320px — 480px
+iPads, Tablets: 481px — 768px
+Small screens, laptops: 769px — 1024px
+Desktops, large screens: 1025px — 1200px
+Extra large screens, TV: 1201px, and more
+Some of the most popular breakpoints are: 1920×1080, 1366×768, 360×640. 
+
+
+
+@media (min-width: 650px) and (max-width: 899px) {
+    main {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1em;
+        }
+    .card:nth-child(3) {
+        grid-column: span 2;
+    }
+
+}
+
+@media (min-width: 900px) {
+    main {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1em;
+    }
+
+}

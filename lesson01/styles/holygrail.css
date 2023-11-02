@@ -1,0 +1,41 @@
+
+* {
+    box-sizing: border-box;
+  }
+  
+body {
+    display: grid;
+    height: 100vh;
+    grid-template: auto auto 1fr auto / 1fr auto;
+}
+
+header {
+    background: lightpink;
+    padding: 2rem;
+    grid-column: 1 / 5;
+}
+
+nav {
+    background: lightgreen;
+    padding: 1rem;
+    grid-column: 1 / 5;
+}
+
+main {
+    background: coral;
+    padding: 1rem;
+    grid-column: 1 / 4;
+}
+
+.right-sidebar {
+    background: yellow;
+    padding: 1rem;
+    grid-column: 4 / 5;
+}
+
+footer {
+    background: wheat;
+    padding: 2rem;
+    text-align: center;
+    grid-column: 1 / 5;
+}
