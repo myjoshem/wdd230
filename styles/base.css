@@ -92,7 +92,7 @@ header h1 {
 main {
   display: grid;
     gap: 1em;
-    width: 97%;
+    max-width: 80%;
     grid-template-columns: auto;
     margin: 0 auto;
     padding: 0 20px 20px 20px;  
@@ -121,14 +121,37 @@ h3 {
   }
 
   .hero {
+	margin: 10px auto;
+	position: relative;
+	border: 1px solid rgba(0,0,0,.1);
+	height: 300px;
+}
 
-  }
-
-  .hero-image {
-	height: 100%;
+.hero img {
 	width: 100%;
+	height: 100%;
 	object-fit: cover;
-  }
+}
+
+.herolabel {
+	position: absolute;
+	top: 30px;
+	left: 30px;
+	background: radial-gradient(#fff, #4D5B97);
+	border: 1px solid rgba(0,0,0,.75);
+	padding: 1.5rem;
+	box-shadow: 0 0 3rem #fff;
+	opacity: 0.75;
+	/* Buenas */
+}
+
+.herolabel p {
+	margin: 0;
+	padding: .25rem;
+	font-weight: 700;
+	font-size: 2rem;
+	font-family:"Great Vibes", serif;
+}
 
   .map {
     display:block;
