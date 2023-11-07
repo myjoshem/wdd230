@@ -1,0 +1,40 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+h1 {
+    text-align: center;
+}
+main{ 
+    margin: 0 auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    background: rgb(87, 64, 189);
+}
+
+img {
+    margin: 2em 2em 1em 2em;
+    align-self: center;
+    max-width: 100%;
+    animation: fade s;
+    border-style: groove;
+    border-color: black;
+    border-width: 1em;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+footer {
+	margin: 0 auto;
+	text-align: center;
+}

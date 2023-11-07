@@ -76,8 +76,12 @@ body {
 header {
     background-color: antiquewhite;
     border-color: black;
-    border-style: groove;
-   
+    border-style: groove;  
+}
+
+footer {
+	margin: 0 auto;
+	text-align: center;
 }
 
 header h1 {
@@ -153,11 +157,13 @@ h3 {
 	font-family:"Great Vibes", serif;
 }
 
-  .map {
+/*   .map {
     display:block;
-    width: auto;
+    width: 100%;
+	height: auto;
+	margin: 0 auto;
   }
-
+ */
 @media (min-width: 650px) {
   h1 {
 		font-size: 2.5rem;
