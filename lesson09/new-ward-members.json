@@ -1,0 +1,37 @@
+{
+    "members": [
+     {
+         "familyName": "Smith",
+         "moveInDate": "2023-02-25T07:00:00.000Z",
+         "numInFamily": "5",
+         "visited": true,
+         "familyMembers": [
+         {
+             "name": "dad",
+             "gender": "F",
+             "birthdate": "1/01/1985"
+         },
+         {
+             "name": "mom",
+             "gender": "F",
+             "birthdate": "1/02/1985"
+         },
+         {
+             "name": "kid1",
+             "gender": "F",
+             "birthdate": "1/01/2010"
+         },
+         {
+             "name": "kidd2",
+             "gender": "F",
+             "birthdate": "1/01/2011"
+         },
+         {
+             "name": "kiddo",
+             "gender": "M",
+             "birthdate": "1/02/2013"
+         }
+         ]
+     }
+    ]
+   }

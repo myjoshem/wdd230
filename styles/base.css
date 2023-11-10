@@ -21,6 +21,13 @@ html {
 	right: 1rem;
 }
 
+#links li {
+	padding: .2em;
+}
+#links li a {
+	text-decoration: none;
+}
+
 #menu::before {
 	content: "☰";
 }

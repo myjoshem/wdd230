@@ -5,11 +5,13 @@
             "links": [
                 {
                     "url": "lesson01/holygrail.html",
-                    "title": "Holy Grail"
+                    "title": "Holy Grail",
+                    "target": "_blank"
                 },
                 {
                     "url": "https://codepen.io/myjoshem/pen/GRzjxRo",
-                    "title": "JS Pen"
+                    "title": "JS Pen",
+                    "target": "_blank"               
                 }
             ]
         },
@@ -18,17 +20,156 @@
             "links": [
                 {
                     "url": "lesson01/media-query.html",
-                    "title": "Media Queries"
+                    "title": "Media Queries",
+                    "target": "_blank"
                 },
                 {
                     "url": "lesson02/design.html",
-                    "title": "Design"
+                    "title": "Design",
+                    "target": "_blank"
                 },
                 {
                     "url": "lesson02/design-principles.html",
-                    "title": "Design Principles"
+                    "title": "Design Principles",
+                    "target": "_blank"
+                }
+            ]
+        },
+        {
+            "lesson": "03",
+            "links": [
+                {
+                    "url": "images/combinator-exercises.JPG",
+                    "title": "Combinators",
+                    "target": "_blank"
+                },
+                {
+                    "url": "https://codepen.io/myjoshem/pen/oNJdOeP",
+                    "title": "PsuedoElements (CP)",
+                    "target": "_blank"
+                },
+                {
+                    "url": "https://codepen.io/myjoshem/pen/LYMrmGO",
+                    "title": "Hambrgr Menu (CP)",
+                    "target": "_blank"
+                }
+            ]
+        },
+        {
+            "lesson": "04",
+            "links": [
+                {
+                    "url": "https://codepen.io/myjoshem/pen/oNJJZGX?editors=0100",
+                    "title": "PseudoClasses",
+                    "target": "_blank"
+                }
+            ]
+        },
+        {
+            "lesson": "05",
+            "links": [
+                {
+                    "url": "lesson05/bom.html",
+                    "title": "ScriptureLookUp",
+                    "target": "_blank"
+                }
+            ]
+        },
+        {
+            "lesson": "06",
+            "links": [
+                {
+                    "url": "images/red-cliffs-temple1200px-large.webp",
+                    "title": "WebPImg",
+                    "target": "_blank"
+                },
+                {
+                    "url": "https://codepen.io/myjoshem/pen/oNJdOeP",
+                    "title": "PsuedoElements (CP)",
+                    "target": "_blank"
+                },
+                {
+                    "url": "#",
+                    "title": "ResponsiveImgs",
+                    "target": "_blank"
+                }
+            ]
+        },
+        {
+            "lesson": "07",
+            "links": [
+                {
+                    "url": "lazyload.html",
+                    "title": "LazyLoading",
+                    "target": "_blank"
+                },
+                {
+                    "url": "#",
+                    "title": "BOM Local Storage",
+                    "target": "_blank"
+                }
+            ]
+        },
+        {
+            "lesson": "08",
+            "links": [
+                {
+                    "url": "#",
+                    "title": "Table",
+                    "target": "_blank"
+                },
+                {
+                    "url": "#",
+                    "title": "Form",
+                    "target": "_blank"
+                },
+                {
+                    "url": "#",
+                    "title": "FormHTML",
+                    "target": "_blank"
+                }
+            ]
+        },
+        {
+            "lesson": "09",
+            "links": [
+                {
+                    "url": "lesson09/new-ward-members.json",
+                    "title": "MembersJSON",
+                    "target": "_blank"
+                },
+                {
+                    "url": "lesson09/prophets.html",
+                    "title": "ProphetsJSON",
+                    "target": "_blank"
+                },
+                {
+                    "url": "data/links.json",
+                    "title": "linksJSON",
+                    "target": "_blank"
+                }
+            ]
+        },
+        {
+            "lesson": "10",
+            "links": [
+                {
+                    "url": "",
+                    "title": "",
+                    "target": "_blank"
+                }
+            ]
+        },
+        {
+            "lesson": "11",
+            "links": [
+                {
+                    "url": "",
+                    "title": "",
+                    "target": "_blank"
                 }
             ]
         }
+
     ]
 }
