@@ -6,7 +6,8 @@
                 {
                     "url": "lesson01/holygrail.html",
                     "title": "Holy Grail",
-                    "target": "_blank"
+                    "target": "_blank",
+                    "tooltip": "Holy Grail Grid Design"
                 },
                 {
                     "url": "https://codepen.io/myjoshem/pen/GRzjxRo",

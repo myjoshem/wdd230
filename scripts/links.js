@@ -21,6 +21,8 @@ const displayLinks = (weeks) => {
         week.links.forEach((link) => {
             let linkList = document.createElement("a");
             linkList.setAttribute('href', `${link.url}`);
+            linkList.setAttribute('title', `${link.tooltip}`);
+            linkList.setAttribute('target', `${link.target}`);
             linkList.textContent = `  ${link.title}   |   `;
             listItem.appendChild(linkList);
             lessonList.appendChild(listItem)
