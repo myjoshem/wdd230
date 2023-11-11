@@ -12,7 +12,8 @@
                 {
                     "url": "https://codepen.io/myjoshem/pen/GRzjxRo",
                     "title": "JS Pen",
-                    "target": "_blank"               
+                    "target": "_blank",
+                    "tooltip": "Applied JavaScript Sample Code"              
                 }
             ]
         },
@@ -22,17 +23,20 @@
                 {
                     "url": "lesson01/media-query.html",
                     "title": "Media Queries",
-                    "target": "_blank"
+                    "target": "_blank",
+                    "tooltip": ""       
                 },
                 {
                     "url": "lesson02/design.html",
                     "title": "Design",
-                    "target": "_blank"
+                    "target": "_blank",
+                    "tooltip": ""       
                 },
                 {
                     "url": "lesson02/design-principles.html",
                     "title": "Design Principles",
-                    "target": "_blank"
+                    "target": "_blank",
+                    "tooltip": ""       
                 }
             ]
         },
@@ -42,17 +46,20 @@
                 {
                     "url": "images/combinator-exercises.JPG",
                     "title": "Combinators",
-                    "target": "_blank"
+                    "target": "_blank",
+                    "tooltip": ""       
                 },
                 {
                     "url": "https://codepen.io/myjoshem/pen/oNJdOeP",
                     "title": "PsuedoElements (CP)",
-                    "target": "_blank"
+                    "target": "_blank",
+                    "tooltip": ""       
                 },
                 {
                     "url": "https://codepen.io/myjoshem/pen/LYMrmGO",
                     "title": "Hambrgr Menu (CP)",
-                    "target": "_blank"
+                    "target": "_blank",
+                    "tooltip": ""       
                 }
             ]
         },
@@ -62,7 +69,8 @@
                 {
                     "url": "https://codepen.io/myjoshem/pen/oNJJZGX?editors=0100",
                     "title": "PseudoClasses",
-                    "target": "_blank"
+                    "target": "_blank",
+                    "tooltip": ""       
                 }
             ]
         },
@@ -72,7 +80,8 @@
                 {
                     "url": "lesson05/bom.html",
                     "title": "ScriptureLookUp",
-                    "target": "_blank"
+                    "target": "_blank",
+                    "tooltip": ""       
                 }
             ]
         },
@@ -82,17 +91,20 @@
                 {
                     "url": "images/red-cliffs-temple1200px-large.webp",
                     "title": "WebPImg",
-                    "target": "_blank"
+                    "target": "_blank",
+                    "tooltip": ""       
                 },
                 {
                     "url": "https://codepen.io/myjoshem/pen/oNJdOeP",
                     "title": "PsuedoElements (CP)",
-                    "target": "_blank"
+                    "target": "_blank",
+                    "tooltip": ""       
                 },
                 {
                     "url": "#",
                     "title": "ResponsiveImgs",
-                    "target": "_blank"
+                    "target": "_blank",
+                    "tooltip": ""       
                 }
             ]
         },
@@ -102,12 +114,14 @@
                 {
                     "url": "lazyload.html",
                     "title": "LazyLoading",
-                    "target": "_blank"
+                    "target": "_blank",
+                    "tooltip": ""       
                 },
                 {
                     "url": "#",
                     "title": "BOM Local Storage",
-                    "target": "_blank"
+                    "target": "_blank",
+                    "tooltip": ""       
                 }
             ]
         },
@@ -117,17 +131,20 @@
                 {
                     "url": "#",
                     "title": "Table",
-                    "target": "_blank"
+                    "target": "_blank",
+                    "tooltip": ""       
                 },
                 {
                     "url": "#",
                     "title": "Form",
-                    "target": "_blank"
+                    "target": "_blank",
+                    "tooltip": ""       
                 },
                 {
                     "url": "#",
                     "title": "FormHTML",
-                    "target": "_blank"
+                    "target": "_blank",
+                    "tooltip": ""       
                 }
             ]
         },
@@ -137,17 +154,20 @@
                 {
                     "url": "lesson09/new-ward-members.json",
                     "title": "MembersJSON",
-                    "target": "_blank"
+                    "target": "_blank",
+                    "tooltip": ""       
                 },
                 {
                     "url": "lesson09/prophets.html",
                     "title": "ProphetsJSON",
-                    "target": "_blank"
+                    "target": "_blank",
+                    "tooltip": ""       
                 },
                 {
                     "url": "data/links.json",
                     "title": "linksJSON",
-                    "target": "_blank"
+                    "target": "_blank",
+                    "tooltip": ""       
                 }
             ]
         },
@@ -157,7 +177,8 @@
                 {
                     "url": "",
                     "title": "",
-                    "target": "_blank"
+                    "target": "_blank",
+                    "tooltip": ""       
                 }
             ]
         },
@@ -167,7 +188,8 @@
                 {
                     "url": "",
                     "title": "",
-                    "target": "_blank"
+                    "target": "_blank",
+                    "tooltip": ""       
                 }
             ]
         }

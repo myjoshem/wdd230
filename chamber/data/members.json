@@ -1,0 +1,67 @@
+{
+    "members": [
+        {
+            "name": "Diamond G Rodeos II",
+            "address": "1091 S Toquer Blvd Toquerville, UT 84774",
+            "phone": "(435)635-7628",
+            "website": "https://diamondgrodeosandranches.com/the-ranch/",
+            "logo": "https://myjoshem.github.io/wdd230/chamber/images/logoipsum-270.svg",
+            "membershiplevel": "Gold Crown",
+            "joinedYear": "1985"
+        },
+        {
+            "name": "Lava Heights Academy",
+            "address": "730 Spring Dr Toquerville, UT 84774",
+            "phone": "(435)635-0300",
+            "website": "https://lavaheightsacademy.com/",
+            "logo": "https://myjoshem.github.io/wdd230/chamber/images/logoipsum-270.svg",
+            "membershiplevel": "Gold Crown",
+            "joinedYear": "2002"
+        },
+        {
+            "name": "Lynn Olds Construction Solutions",
+            "address": "47 Ash Creek Dr Toquerville, UT 84774",
+            "phone": "(435)635-2165",
+            "website": "https://www.finduslocal.com/local-business/utah/toquerville/lynn-olds-construction-solutions_47-south-ashcreek-drive/",
+            "logo": "https://myjoshem.github.io/wdd230/chamber/images/logoipsum-270.svg",
+            "membershiplevel": "Platinum Crown",
+            "joinedYear": "1993"
+        },
+        {
+            "name": "Roundy Boots",
+            "address": "225 N Hillside Dr Toquerville, UT 84774",
+            "phone": "(801)209-7561",
+            "website": "http://www.roundyboots.com/index.html",
+            "logo": "https://myjoshem.github.io/wdd230/chamber/images/logoipsum-270.svg",
+            "membershiplevel": "Siver Crown",
+            "joinedYear": "2020"
+        },
+        {
+            "name": "Shangri-La Event Center",
+            "address": "1700 S Shangri-La Ln Toquerville, UT 84774",
+            "phone": "(435)990-3711",
+            "website": "https://shangrilaeventcenter.com/",
+            "logo": "https://myjoshem.github.io/wdd230/chamber/images/logoipsum-270.svg",
+            "membershiplevel": "Diamond Crown",
+            "joinedYear": "2000"
+        },
+        {
+            "name": "The Springs, Weddings and Events",
+            "address": "580 E Spring Dr. Toquerville, UT 84774",
+            "phone": "(435)421-9756",
+            "website": "https://www.thespringsweddingsandevents.com/",
+            "logo": "https://myjoshem.github.io/wdd230/chamber/images/logoipsum-270.svg",
+            "membershiplevel": "Bronze Crown",
+            "joinedYear": "2017"
+        },
+        {
+            "name": "Toquerville Automotive",
+            "address": "40 Berry Ave Toquerville, UT 84774",
+            "phone": "(435)635-0637",
+            "website": "https://www.yellowpages.com/toquerville-ut/mip/toquerville-automotive-6529436",
+            "logo": "https://myjoshem.github.io/wdd230/chamber/images/logoipsum-270.svg",
+            "membershiplevel": "Gold Crown",
+            "joinedYear": "1994"
+        }
+    ]
+  }
