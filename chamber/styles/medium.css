@@ -1,0 +1,128 @@
+@media screen and (min-width: 680px) {
+    /* .header{
+        background-color: purple;
+    } */
+
+    .small-view {
+        display: none;
+    }
+
+    .large-view {
+        display: inline;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    nav ul li {
+        height: auto;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+    }
+
+    .navigation {
+        display: flex;
+    }
+
+    nav ul li {
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    main {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        max-width: 800px;
+    }
+
+    .with-side-bar {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+    }
+
+    figure img:hover {
+        box-shadow: 0 0 50px #333;
+    }
+
+    .hero,
+    .contact-box,
+    .location-box {
+        grid-column: span 2;
+    }
+
+    section {
+        grid-column: span 1;
+        /* border: 1px solid var(--charcoal); */
+    }
+
+    .hero-text {
+        position: absolute;
+        color: white;
+        width: 100%;
+        padding: 3rem;
+        top: 35%;
+        line-height: 1;
+        text-align: center;
+    }
+
+    .hero-sub-text1 {
+        display: block;
+        font-size: 2rem;
+        color: white;
+    }
+
+    .hero-sub-text2 {
+        display: block;
+        font-size: 1rem;
+        color: white;
+    }
+
+    .hero-text .cta {
+        text-decoration: none;
+        display: inline-block;
+        padding: 10px 30px;
+        color: black;
+        background-color: var(--mustard);
+    }
+
+    .footer-wrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    footer .contact-footer {
+        grid-column: span 1;
+        margin: 2rem;
+    }
+
+    footer .page-info {
+        grid-column: span 1;
+        font-size: .85rem;
+    }
+
+    .hero-sub-text1::after {
+        content: "Medium";
+    }
+
+    .list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .list section {
+        display: grid;
+        grid-template-columns: 1fr 1.5fr 1fr 2fr 1fr 1fr;
+        margin: 0;
+        padding: 0.25rem;
+    }
+
+    .list h2{
+        font-size: .8rem;
+    }
+}
