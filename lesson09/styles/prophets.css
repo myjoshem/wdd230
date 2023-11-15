@@ -1,0 +1,87 @@
+body {
+	font-family: Roboto, helvetica, sans-serif;
+}
+
+header,
+main,
+footer {
+	margin: 0 auto;
+}
+
+header {
+	padding: .5em .5em;
+	background-color: #048286;
+    color: whitesmoke;
+    text-align: center;
+    font-size: larger;
+    margin-bottom: 1em;
+    border-color: black;
+    border-style: groove;
+    text-shadow: 2px 2px #131010;
+}
+
+div {
+	display: grid;
+    gap: 1em;
+    width: 100%;
+    grid-template-columns: auto;
+}
+
+.card {
+    background-color: rgb(176, 231, 231);
+    padding: 0 1em 1em 1em;
+    border-radius: 22px 22px 0 0;
+    border-color: black;
+    border-style:ridge;
+
+}
+
+section img {
+    width: 100%;
+    height: auto;
+    border-color: black;
+    border-style: solid;
+}
+
+section h2 {
+    width: auto;
+    margin-right: -6px;
+    margin-bottom: 0;
+    background-color: black;
+    border-radius: 20px 20px 0 0;
+    color: whitesmoke;
+    padding: 1em 1em 1em 1em;
+    text-shadow: 2px 2px #131010;
+}
+
+footer {
+	margin: 1rem 1rem 1rem 1rem;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	text-align: center;
+    background-color: #048286;
+    color: white;
+    padding-bottom: .5em;
+    border-color: black;
+    border-style: groove;
+    text-shadow: 2px 2px #131010;
+    
+}
+
+@media (min-width: 650px) and (max-width: 899px) {
+   section {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1em;
+        }
+    .card:nth-child(3) {
+        grid-column: span 2;
+    }
+
+}
+
+@media (min-width: 900px) {
+   div {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1em;
+    }
+
+}
