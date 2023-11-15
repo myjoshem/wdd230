@@ -1,0 +1,48 @@
+Form title:
+descriptive
+
+Payment vs. Purchase Movie Tickets
+
+Submit Button:
+do not use Submit
+
+ask, what do I want to do? (as in, what is the purchasers intention)
+
+Answer: I want to buy movie tickets. Use this to name the 'submit' button.
+
+Make it even more personal:
+'Purchase My Tickets'
+
+Form fields:
+too many - not good.
+
+ie. Newsletter sign-up... a first name and email are sufficient. More seems like 'data-mining' and seems subversive.
+
+Clearly identify 'required fields.
+
+
+Its OK to have empty space
+Form fields should be in a single column. Keep path of eye tracking a straight line from top to bottom.
+
+Phone number:
+single input to allow for any length
+
+Radio: 5 options or less
+
+Drop-down: more than 5 options.
+
+Always use label wrapping, even if you use 'placeholder' tags.
+
+Order choices logically. ABC or Breakfast, lunch, dinner
+
+DONT use a reset button.
+
+USe confirmation page
+
+Button or input, minimun 44px tall
+
+Group related items visually
+
+Fieldsets
+
+Input: type, name(unique and ties to label, also, using the right one helps with autocomplete), user instructions, required/not, placeholder

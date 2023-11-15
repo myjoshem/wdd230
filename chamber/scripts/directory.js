@@ -29,8 +29,8 @@ const displayDirectory = (members) => {
         name.textContent = `${member.name}`;
         p1.textContent = `${member.address}`;
         p2.textContent = `${member.phone}`;
-        p3.innerHTML = `<a href=${member.website}>${member.website}</a>`;
-        p4.textContent = `${member.membershipLevel} Member`;
+        p3.innerHTML = `<a href=${member.website}>Company Website</a>`;
+        p4.textContent = `${member.membershiplevel} Member`;
         p5.textContent = `${member.joinedYear}`;
 
         //set any attributes to elements

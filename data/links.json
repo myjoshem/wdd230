@@ -129,13 +129,13 @@
             "lesson": "08",
             "links": [
                 {
-                    "url": "#",
+                    "url": "lesson08/index.html",
                     "title": "Table",
                     "target": "_blank",
                     "tooltip": ""       
                 },
                 {
-                    "url": "#",
+                    "url": "lesson08/index.html",
                     "title": "Form",
                     "target": "_blank",
                     "tooltip": ""       

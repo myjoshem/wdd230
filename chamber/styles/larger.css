@@ -1,9 +1,6 @@
 @media screen and (min-width: 940px) {
-    /* .header {
-        background: green;
-    } */
 
-    .hero,
+ /*    .hero,
     .contact-box {
         grid-column: span 3;
     }
@@ -36,11 +33,11 @@
         padding: 10px 30px;
         color: black;
         background-color: var(--mustard);
-    }
+    } */
 
     main {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        max-width: 1000px;
+        grid-template-columns: repeat(3, minmax(20px, 1fr));
+        max-width: 90%;
     }
 
     section {
@@ -51,7 +48,7 @@
         content: "Large";
     }
 
-    .grid > section {
-        min-width: unset;
-    }
+ /*    .grid > section {
+        min-width: 50%;
+    } */
 }
