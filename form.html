@@ -19,9 +19,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/form.css" rel="stylesheet">
 </head>
 <body>
     <header>
+        <div id="formmessage"></div>
         <img src="images/MichelleMarkham.JPEG" width="120" height="170" alt="Student Profile Picture">
         <h1>Michelle Markham</h1>
     </header>
@@ -46,7 +48,33 @@
          </ul>
     </nav>
     <main>
-        
+        <form method="get" action="record.html">
+        <label for="username" class="top">username
+            <input type="text" id="username" name="username" required>
+        </label>
+        <label for="password" class="top">Password (8 or more alpha-numeric)
+            <input type="password" id="password" name="password" pattern="^[a-zA-Z0-9]{8,}$" required>
+        </label>
+        <label for="confirmpassword" class="top">Confirm Password
+            <input type="password" name="confirmpassword" id="confirmpassword" pattern="^[a-zA-Z0-9]{8,}$" required>
+        </label>
+        <span class="formmessage"></span>
+        <label for="email" class="top">Email
+            <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address. (only byui.edu domains)" placeholder="youremail@byui.edu">
+        </label>
+        <label for="r" class="top">Page Rating</label>
+        <div id="rangevalue">0</div>
+        <input type="range" id="r" name="r" min="0" max="10" value="0" step="1" list="rangevalues">
+        <datalist id="rangevalues">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </datalist>
+        <input type="submit" class="submitBtn" value="Sign Me Up!">
+    </form>
 
     </main>
     <footer> 
@@ -60,12 +88,16 @@
         <script src="scripts/getdates.js">
         </script>
         <script src="scripts/responsive-menu.js">
-        </script>     
+        </script>
+         <script src="scripts/rangevalue.js">
+        </script>  
+         <script src="scripts/confirmpassword.js">
+        </script>    
     </body>
 
 
 
 
 
-^[a-zA-Z0-9]{8,}$
+
 
