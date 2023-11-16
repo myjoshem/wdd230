@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1">
+    <meta name="author" content="Michelle Markham">
+    <title>Michelle Markham - WDD230 - Week10 Web Frontend Development</title>
+    <meta name="description" content="Michelle Markham's Week 10 Weather HTML Assignment">
+    <link rel="icon" href="../favicon.ico">
+     <!--  social media (Facebook) META Tags -->
+    <meta property="og:title" content="Weather HTML">
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/7/79/Utah_State_Route_17_view_on_Toquerville%2C_Utah_-_panoramio.jpg">
+    <meta property="og:url" content="https://myjoshem.github.io/wdd230/index.html">
+    <meta property="og:description" content="Showing off my work this semester. The good, bad, and misguided.">
+    <!--<link rel="stylesheet" href="styles/normalize.css">
+    chose to link to a minimized version of the normalize.css-->
+   <!--  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="styles/base.css" rel="stylesheet"> -->
+</head>
+<body>
+    <header>
+        <img src="../images/MichelleMarkham.JPEG" width="120" height="170" alt="Student Profile Picture">
+        <h1>Michelle Markham</h1>
+    </header>
+    <nav>
+        <button id="menu" class=""></button>
+        <ul class="navigation">
+            <li>
+             <a href="#" class="active">Home</a>
+            </li>
+            <li>
+             <a href="chamber/siteplan.html">Site Plan</a>
+            </li> 
+            <li>
+             <a href="chamber/">Chamber</a>
+            </li> 
+            <li>
+             <a href="https://www.byui.edu" target="_blank">BYU-Idaho</a>
+            </li>
+            <li>
+                <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/2-ne/32?lang=eng#:~:text=2%20Do%20ye,in%20the%20dark." target="_blank">Scripture</a>
+            </li>
+         </ul>
+    </nav>
+    <H1>OpenWeatherMap.org API Test</H1>
+    <main>
+        <p>The current temperature in Trier, Germany is <span id="current-temp"></span></p>
+        <figure>
+            <img id="weather-icon" src="" alt="">
+            <figcaption></figcaption>
+        </figure>
+    </main>
+    <footer> 
+    <p>©
+        <span id="copyright"></span> Michelle Markham | OpenWeatherMap.org | CC BY-SA 4.0
+    </p>
+    <p>Last Modified:
+        <span id="lastModified"></span>
+    </p>
+    </footer>
+    <script src="../scripts/getdates.js">
+    </script>
+    <script src="../scripts/responsive-menu.js">
+    </script>
+     <script src="scripts/weather.js">
+    </script>
+</body>
+</html>
