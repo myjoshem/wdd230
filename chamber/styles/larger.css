@@ -1,54 +1,6 @@
 @media screen and (min-width: 940px) {
-
- /*    .hero,
-    .contact-box {
-        grid-column: span 3;
-    }
-
-    .hero-text{
-        position: absolute;
-        color: white;
-        width: 100%;
-        padding: 3rem;
-        top: 45%;
-        line-height: 1;
-        text-align: center;
-    }
-    
-    .hero-sub-text1 {
-        display: block;
-        font-size: 2rem;
-        color: white;
-    }
-    
-    .hero-sub-text2 {
-        display: block;
-        font-size: 1rem;
-        color: white;
-    }
-    
-    .hero-text .cta {
-        text-decoration: none;
-        display: inline-block;
-        padding: 10px 30px;
-        color: black;
-        background-color: var(--mustard);
-    } */
-
     main {
         grid-template-columns: repeat(3, minmax(20px, 1fr));
         max-width: 90%;
     }
-
-    section {
-        grid-column: span 1;
-    }
-
-    .hero-sub-text1::after{
-        content: "Large";
-    }
-
- /*    .grid > section {
-        min-width: 50%;
-    } */
 }

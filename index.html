@@ -35,7 +35,7 @@
              <a href="chamber/siteplan.html">Site Plan</a>
             </li> 
             <li>
-             <a href="chamber/">Chamber</a>
+             <a href="chamber/index.html">Chamber</a>
             </li> 
             <li>
              <a href="https://www.byui.edu" target="_blank">BYU-Idaho</a>
@@ -65,7 +65,11 @@
         </div>
         <div class="card" id="info">
            <h3>Information</h3>
-           <p>Local Weather</p>
+           <span id="current-temp"> </span>
+           <figure>
+            <img id="weather-icon" src="" alt="">
+            <figcaption></figcaption>
+        </figure><span id="current-temp"> </span>
            <p>Number of Page visits: <span class="visits"></span></p>
         </div>
     </main>
@@ -87,6 +91,8 @@
      <script src="scripts/pagevisits.js">
     </script>
     <script src="scripts/links.js">
+    </script>
+    <script src="scripts/weather.js">
     </script>
 </body>
 </html>
