@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+    <!-- Standard Meta's -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+
+    <!-- Title and Favicon -->
+    <title></title>
+    <link rel="icon" href="favicon.ico">
+
+     <!-- social media (Facebook) META Tags -->
+    <meta property="og:title" content="">
+    <meta property="og:type" content="" />
+    <meta property="og:image" content="">
+    <meta property="og:url" content="">
+    <meta property="og:description" content="">
+
+    <!-- CSS and Normalize/Resets -->
+    <link href="styles/reset.css" rel="stylesheet" >
+    <link href="styles/scoots-base.css" rel="stylesheet">
+    <link href="styles/scoots-medium.css" rel="stylesheet">
+    <link href="styles/scoots-large.css" rel="stylesheet">
+
+    <!-- Google Fonts Api -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+<body class="grid-container-areas">
+    <!-- this will be our flex container -->
+    <header class="header-main grid-area-header"> 
+        <!-- <button id="hamMenu" class=""></button> -->
+        <!-- the next div and its siblings will be flex 'items', direct children of 'header-main' class container -->
+        <!-- because the 'header-main_logo' class div also has 'children', it will ALSO be a flex container -->
+        <div class="header-main_logo">
+            <!-- the following img, nav, and div elements (only siblings and direct children of the container 'header-main-logo'), will be flex 'items' -->
+             <img src="favicon-32x32.png" alt="Scooter icon">
+             <span class="logo_scoots">Scoots</span>
+           
+            <nav class="header-main_nav"> 
+                 <!-- the ul is not a flex item, we will just give it a left margin and remove bullet points (list-style if not done in reset or normalize file)  -->
+                <ul class="navigation">
+                    <!-- we will give this a value of display: inline and float left so it's in a row rather than default column list and move it up close to position next to logo in the header  -->
+                    <li>
+                        <!-- the anchor tag is where we style the text and links -->
+                     <a href="#" class="active">Home</a>
+                    </li>
+                    <li>
+                     <a href="rentals.html" target="_blank">Rentals</a>
+                    </li> 
+                    <li>
+                     <a href="reservations.html" target="_blank">Reservations</a>
+                    </li> 
+                    <li>
+                     <a href="contact.html" target="_blank">Contact</a>
+                    </li>
+                 </ul>
+            </nav>    
+        </div>
+        <!-- this is both a flex 'item' and also a flex 'container', because we want to align the social media icons as flex items -->
+        <div class="header-main_social-media">
+            <!-- these will be flex items -->
+            <a href="https://www.facebook.com"><div class="header-main_social-media_fb"></div></a>
+            <a href="https://www.instagram.com"><div class="header-main_social-media_in"></div></a>
+        </div>
+        <div class="hamburger-menu active" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </header>
+    <main>
+    <div class="grid-area-hero">
+             <!-- Hero Call to Action -->
+             <section class="hero-call-to-action">
+                <h1>Discover Cozumel's Wonders with Scoots!</h1>
+                <p>Our mission at Scoots is to make island exploration accessible to everyone...</p>
+                <a href="#" class="cta-button">Reserve Your Ride</a>
+            </section>
+        </div>
+          
+    
+            <!-- Introduction Paragraph -->
+            <section class="intro-paragraph">
+                <p>Welcome to Scoots – Where Every Adventure is Inclusive!...</p>
+            </section>
+    
+            <!-- Vehicle Cards Section -->
+            <section class="vehicle-cards">
+                <!-- ATV Card -->
+                <div class="card">
+                    <h2>ATV Adventures for All!</h2>
+                    <p>Our all-terrain vehicles are designed for adventure enthusiasts of every age and ability...</p>
+                    <a href="#" class="card-button">Book Now</a>
+                </div>
+    
+                <!-- Scooter Card -->
+                <div class="card">
+                    <h2>Scoot in Style – Perfect for All Explorers!</h2>
+                    <p>Glide through Cozumel's streets on our sleek and nimble scooters, crafted for accessibility and comfort...</p>
+                    <a href="#" class="card-button">Book Now</a>
+                </div>
+    
+                <!-- Jeep Card -->
+                <div class="card">
+                    <h2>Jeep Journeys for Every Explorer!</h2>
+                    <p>Embark on a rugged expedition with our 4-wheel drive jeeps, suitable for families and groups of all abilities...</p>
+                    <a href="#" class="card-button">Book Now</a>
+                </div>
+            </section>
+        </main>
+   
+    <footer class="grid-area-footer">           
+    <p>© <span id="copyright"></span> Michelle Markham | Utah USA <br>Last Modified:
+    <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/getdates.js">
+    </script>
+    <script src="scripts/hamburger.js">
+    </script>
+    <script src="scripts/darkmode.js"></script>
+    <script src="scripts/windchill.js"></script>
+</body>
+</html>

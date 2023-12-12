@@ -1,0 +1,12 @@
+@media screen and (min-width: 769px) {
+    /* Your styles for this range go here */
+    .vehicle-cards {
+        flex-direction: row;
+        flex-grow: 1;
+    }  
+
+    .card {
+        flex: 0 1 calc(33.33% - 10px); /* Adjust the percentage and margin as needed */
+        flex-grow: 1;
+    }
+  }

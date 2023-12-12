@@ -1,0 +1,395 @@
+:root {
+    /* Color scheme variables */
+    --color-primary: #002366;    /* deep, rich - Main brand color*/
+    --color-secondary: #FFD700;  /* contrast to primary but also a 'rich/deep' tone - Secondary color for accents or highlights */
+    --color-accent: #FF7F50;     /* bright, calls attention, use sparingly - Accent color for specific elements */
+    --color-neutral: #D3D3D3;    /* light, ie. taupe, grays, off-whites - Neutral color for backgrounds or borders */
+    /* --color-filter_lighter: brightness(150%) contrast(120%); 
+    --color-filter_darker: filter: brightness(60%) contrast(80%);  */
+
+    /* FONTS */
+    --base-fs: 16px;
+    --line-height: 1.5;
+  }
+
+  
+
+  /* UTILITY CLASSES */
+
+  .button {
+    display: inline-block;
+    color: white;
+    background-color: var(--color-primary);
+    border-radius: 5px;
+    border: none;
+    padding: 10px; /*top & bottom*/
+    margin: 20px 0; /*top-bottom, right-left*/
+    box-shadow: 0 2px 4px rgba ( 0,0,0,0.3);
+    transition: box-shadow 0.3s ease;
+  }
+
+  .button:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0, 0.3); /* Slightly elevate on hover */
+    cursor: pointer;
+  }
+
+  .button:active {
+    box-shadow: inset 0 2px 4px rgba(0,0,0, 0.5);
+  }
+  
+  
+
+body {
+    /* background-color: #000; */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: var(--base-font-size);
+    line-height: calc(var(--base-fs) * var(--line-height));
+}
+
+main {
+    max-width: 1200px; /* Adjust the maximum width as needed */
+    margin: 0 auto;    /* Center the main content */
+    padding: 20px;     /* Add some padding for spacing */
+}
+
+/* Grid stuff */
+.grid-container-areas {
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-areas:
+        "header"
+        "hero"
+        "main"
+        "footer";
+    min-height: 100vh; /* just in case svh is not supported*/
+    min-height: 100svh;
+}
+
+.grid-area-header {
+    position: sticky;
+    z-index: 1000;
+    grid-area: header;
+}
+
+/* HERO */
+
+
+.grid-area-hero {
+ 
+    max-width: 100%;
+    grid-area: hero;
+    background-image: url("../images/jpgsmallbeach_mexico_cozumel_sign_travel_vacation-1187493_herosmall.jpg");
+   
+    /* <!-- <img src="https://c.pxhere.com/photos/bc/ba/beach_mexico_cozumel_sign_travel_vacation-1187493.jpg!d" srcset="https://c.pxhere.com/photos/bc/ba/beach_mexico_cozumel_sign_travel_vacation-1187493.jpg!d" alt="beach, sea, coast, ocean, shore, walkway, vacation, travel, sign, tower, body of water, mexico, cozumel, Free Images In PxHere"> --> */
+    background-size: cover;
+    background-position: center;
+    text-align: left;
+    padding: 10px;
+    border-radius: 50px;
+    color: #fff;
+    aspect-ratio: 16/9;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+
+    }
+  
+       .grid-area-hero h1 {
+            font-size: 1.2em;
+            line-height: 1.1;
+            align-self: first baseline;
+            justify-self: flex-start;
+            width: 200px;
+            color: white;
+        }
+
+.grid-area-main {
+    grid-area: main;
+}
+
+.grid-area-footer {
+    grid-area: footer;
+    text-align: center;
+}
+
+/* Style for Hero Call to Action */
+.hero-call-to-action {
+    min-width: 60%;
+    max-width: 60%;
+    text-align: left;
+    background-color: rgba(0, 35, 102, 0.2);
+    backdrop-filter: blur(1px); /* Adjust the blur amount as needed */
+    border-radius: 50px;
+    color: #fff;
+    padding: 20px;
+}
+
+.hero-call-to-action h1 {
+    color: #fff;
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.hero-call-to-action p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+
+}
+
+.cta-button {
+    display: inline-block;
+    width: fit-content;
+    padding: 8px 15px;
+    background-color: #002366;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    border-radius: 10px;
+    transition: background-color 0.3s ease; /* Adding a smooth transition */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+      
+    
+}
+
+.cta-button:hover {
+    background-color: #FFD700;
+    color: #002366;
+}
+
+.cta-button:active {
+    background-color: #FF7F50; /* Adjust the color for the active state */
+}
+
+/* Style for Introduction Paragraph */
+.intro-paragraph {
+    margin: 30px 0;
+}
+
+.intro-paragraph p {
+    font-size: 1.2em;
+}
+
+/* Style for Vehicle Cards Section */
+.vehicle-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 100%; /* Adjust the card width and spacing */
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.card h2 {
+    font-size: 1.3em;
+    line-height: 1em;
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+.card-button {
+    display: inline-block;
+    width: fit-content;
+    padding: 6px 15px;
+    background-color: #002366;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+    border-radius: 10px;
+    transition: background-color 0.3s ease; /* Adding a smooth transition */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+      
+}
+
+.card-button:hover {
+    background-color: #FFD700;
+    color: #002366;
+}
+.card-button:active {
+    background-color: #FF7F50; /* Adjust the color for the active state */
+}
+
+/* NAVIGATION - ALL PAGES */
+
+/* this is the 'flex' container for the header element where we will have our logo, navigation, and social media icons. It will span the entire width of the site. We will also give it a 'fixed' height that will help us in styling the contents. */
+.header-main {
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 60px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* these classes will be the flex items (children) of the .header-main */
+
+/* this will be both a flex item and flex container, the width will just fit the content (direct children of this container) the height will be 100% of its parent container, the padding give some space between the logo and left side of container. We make it a flex container so that the logo and navigation line up beside each other -  we will provide color just to help style*/
+.header-main_logo {
+    width: fit-content;
+    height: 100%;
+    padding-left: 60px;
+    display: flex;
+    
+}
+    .logo_scoots {
+        align-self: baseline;
+        font-size: xx-large;
+        font-weight: 600;
+        font-stretch: extra-expanded;
+        font-style: oblique;
+    }
+    /* 1st Flex Item in the above container. By setting a height, we can make sure the image fits into container, otherwise it will appear full-size and grow outside container. Because this is a flex item, we can use 'align-self' to center it vertically inside the container */
+    .header-main_logo img {
+        height: 40px;
+        align-self: baseline;
+        padding-right: 10px;
+
+    }
+    /* 2nd flex item in container. This way we can have the navigation sit right next to logo. If we moved it outside this container, it could be a flex item sibling to the logo and social media items */
+    .header-main_nav {
+        width: fit-content;
+        height: 100%;
+    }
+        /* removing the bullets from the unordered list, if not already done in reset or normalize file. Setting a left-margin to give some space between navigation and logo */
+        .header-main_nav ul {
+            list-style: none;
+            margin-left: 30px;
+        }
+            /* this is not a flex item or container, so we will make the display: inline; to display the list in a row, vs. the default of column. Because this is not a flex item, we will use 'float' to have each list item push up against each other, taking away gaps and making it easier to have more control over spacing */
+            .header-main_nav ul li {
+                display: inline;
+                float: left;
+            }
+                /* We will give this a display of 'block' so that there will be more clickable space around the links. We style the anchor tag text and links with this selector. By giving it  line-height equal to the .header-main container, this element will stretch to 100% of the height. We will also apply some padding which will increase the clickable space */
+                .header-main_nav ul li a {
+                    display: block;
+                    line-height: 60px;
+                    height: 100%;
+                    padding: 0 10px;
+                }
+                .header-main_nav ul li a:hover {
+                    color: blueviolet;
+                }
+
+/* 2nd flex item under 'header-main' and also a flex container so we can style social media icon items */
+.header-main_social-media {
+    width: fit-content;
+    height: 100%;
+    padding-right: 60px;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+    /* by setting the height and width of the image, the size is fixed within it's contained space. We set to not repeat and to cover */
+    .header-main_social-media_fb {
+        width: 20px;
+        height: 20px;
+        background-image: url(../images/facebook.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    /* we will change the image icon to a different color upon hover */
+    .header-main_social-media_fb:hover {
+        background-image: url(../images/facebook-color.png);
+
+    }
+    .header-main_social-media_in {
+        width: 20px;
+        height: 20px;
+        background-image: url(../images/instagram.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .header-main_social-media_in:hover {
+        background-image: url(../images/instagram-color.png);   
+    }
+
+/* HAMBURGER MENU*/
+
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .bar {
+    height: 3px;
+    width: 25px;
+    background-color: black;
+    margin: 0px 10px 3px 10px;
+    line-height: .5em;
+  }
+
+  /* this is for when the screen get's bigger, do not want to lose control and get */
+  @media screen and (min-width: 480px) {
+    .grid-area-hero {
+        width: 100%;
+            background-image: url("../images/beach_mexico_cozumel_sign_travel_vacation-1187493.jpg!d");
+        }
+        .hero-call-to-action {
+            max-width: 40%;
+            min-width: 300px;
+            padding: 35px;
+        }
+      
+}
+  
+  @media screen and (max-width: 768px) {
+    /* Media query for smaller screens */
+    .header-main_nav {
+      display: none;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      color: white;
+    }
+  
+    .header-main_nav.active {
+      display: flex;
+      flex-direction: row;
+    }
+  
+    .header-main_nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+  
+    .header-main_nav li {
+      margin-right: 0;
+    }
+  
+    .header-main_nav a {
+      padding: 10px;
+      display: block;
+      text-align: center;
+      color: white;
+      text-decoration: none;
+    }
+  
+    .hamburger-menu {
+      display: flex;
+    }
+}
+
+  
