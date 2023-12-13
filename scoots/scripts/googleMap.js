@@ -1,4 +1,4 @@
-
+//TODO make the google map change based on selected address
 
   <footer>
     <div class="map-container">

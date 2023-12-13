@@ -87,6 +87,9 @@ main {
 
 .grid-area-main {
     grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
 }
 
 .grid-area-footer {
@@ -255,7 +258,7 @@ main {
 
 /* these classes will be the flex items (children) of the .header-main */
 
-/* this will be both a flex item and flex container, the width will just fit the content (direct children of this container) the height will be 100% of its parent container, the padding give some space between the logo and left side of container. We make it a flex container so that the logo and navigation line up beside each other -  we will provide color just to help style*/
+/* this will be both a flex item and flex container, the width will just fit the content (direct children of this container) the height will be 100% of its parent container, the padding give some space between the logo and left side of container. We make it a flex container so that the logo and navigation line up beside each other*/
 .header-main_logo {
     width: fit-content;
     height: 100%;
@@ -300,7 +303,7 @@ main {
                 display: inline;
                 float: left;
             }
-                /* We will give this a display of 'block' so that there will be more clickable space around the links. We style the anchor tag text and links with this selector. By giving it  line-height equal to the .header-main container, this element will stretch to 100% of the height. We will also apply some padding which will increase the clickable space */
+                /* this a display of 'block' so that there will be more clickable space around the links. We style the anchor tag text and links with this selector. By giving it line-height equal to the .header-main container, this element will stretch to 100% of the height. Padding will increase the clickable space */
                 .header-main_nav ul li a {
                     display: block;
                     line-height: 80px;
@@ -320,7 +323,7 @@ main {
     align-items: center;
     column-gap: 10px;
 }
-    /* by setting the height and width of the image, the size is fixed within it's contained space. We set to not repeat and to cover */
+    /* by setting the height and width of the image, the size is fixed within it's contained space. I set to not repeat and to cover */
     .header-main_social-media_fb {
         width: 30px;
         height: 30px;
@@ -453,8 +456,8 @@ main {
     input[type="radio"] {
     display: none; /* Hide the default radio button because we are going to make it 'select' the map and change background color*/
   }
-  
-  label {
+  /* TODO give this a less generic class */
+  .label-location {
     cursor: pointer;
     padding: 10px;
     border: 1px solid #fff;
@@ -468,6 +471,42 @@ main {
     background-size: 50px;
     background-repeat: no-repeat;
   }
+ /* RENTALS PAGE */
 
+ .grid-section-rentals {
+    /* display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px; */
+  }
+  
+  .rental-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  /* TODO find photo of vehicles */
+  .card-image {
+    background-image: url();
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .card-info {
+    padding: 15px;
+  }
+  
+  /* Media queries for RENTALS PAGE */ 
+    @media (max-width: 768px) {
+    .grid-area-main {
+      grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .grid-area-main {
+      grid-template-columns: 1fr;
+    }
+  }
 
   
