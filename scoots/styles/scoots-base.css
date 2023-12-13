@@ -76,7 +76,7 @@ main {
 
 .grid-area-hero {
  
-    max-width: 100%;
+    max-width: calc(100% - 20px);
     grid-area: hero;
     background-image: url("../images/jpgsmallbeach_mexico_cozumel_sign_travel_vacation-1187493_herosmall.jpg");
    
@@ -115,7 +115,7 @@ main {
 
 /* Style for Hero Call to Action */
 .hero-call-to-action {
-    height: auto;
+    overflow: hidden;
     min-width: 60%;
     max-width: 60%;
     text-align: left;
