@@ -30,12 +30,19 @@
 <body class="grid-container-areas">
     <!-- this will be our flex container -->
     <header class="header-main grid-area-header"> 
-        <!-- <button id="hamMenu" class=""></button> -->
+        <div class="header-main_weather">
+            <div class="current-temp" id="current-temp">
+                <img id="weather-icon" src="" alt="">
+            </div>
+            <div id="current-humidity">
+            </div>
+            <span id="weather-description"></span>
+          </div>
         <!-- the next div and its siblings will be flex 'items', direct children of 'header-main' class container -->
         <!-- because the 'header-main_logo' class div also has 'children', it will ALSO be a flex container -->
         <div class="header-main_logo">
             <!-- the following img, nav, and div elements (only siblings and direct children of the container 'header-main-logo'), will be flex 'items' -->
-             <img src="favicon-32x32.png" alt="Scooter icon">
+             <!-- <img src="favicon-32x32.png" alt="Scooter icon"> -->
              <span class="logo_scoots">Scoots</span>
            
             <nav class="header-main_nav"> 
@@ -44,10 +51,10 @@
                     <!-- we will give this a value of display: inline and float left so it's in a row rather than default column list and move it up close to position next to logo in the header  -->
                     <li>
                         <!-- the anchor tag is where we style the text and links -->
-                     <a href="#" class="active">Home</a>
+                     <a href="index.html" target="_blank">Home</a>
                     </li>
                     <li>
-                     <a href="rentals.html" target="_blank">Rentals</a>
+                     <a href="rentals.html" class="current" target="_blank">Rentals</a>
                     </li> 
                     <li>
                      <a href="reservations.html" target="_blank">Reservations</a>
@@ -84,6 +91,6 @@
     <script src="scripts/hamburger.js">
     </script>
     <script src="scripts/darkmode.js"></script>
-    <script src="scripts/windchill.js"></script>
-</bod>
+    <script src="scripts/weather.js"></script>
+</body>
 </html>

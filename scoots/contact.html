@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+    <!-- Standard Meta's -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+
+    <!-- Title and Favicon -->
+    <title></title>
+    <link rel="icon" href="favicon.ico">
+
+     <!-- social media (Facebook) META Tags -->
+    <meta property="og:title" content="">
+    <meta property="og:type" content="" />
+    <meta property="og:image" content="">
+    <meta property="og:url" content="">
+    <meta property="og:description" content="">
+
+    <!-- CSS and Normalize/Resets -->
+    <link href="styles/reset.css" rel="stylesheet" >
+    <link href="styles/scoots-base.css" rel="stylesheet">
+    <link href="styles/scoots-medium.css" rel="stylesheet">
+    <link href="styles/scoots-large.css" rel="stylesheet">
+
+    <!-- Google Fonts Api -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+<body class="grid-container-areas">
+    <!-- this will be our flex container -->
+    <header class="header-main grid-area-header"> 
+            <div class="header-main_weather">
+                <div class="current-temp" id="current-temp">
+                    <img id="weather-icon" src="" alt="">
+                </div>
+                <div id="current-humidity">
+                </div>
+                <span id="weather-description"></span>
+              </div>
+        <!-- the next div and its siblings will be flex 'items', direct children of 'header-main' class container -->
+        <!-- because the 'header-main_logo' class div also has 'children', it will ALSO be a flex container -->
+        <div class="header-main_logo">
+            <!-- the following img, nav, and div elements (only siblings and direct children of the container 'header-main-logo'), will be flex 'items' -->
+             <!-- <img src="favicon-32x32.png" alt="Scooter icon"> -->
+             <span class="logo_scoots">Scoots</span>
+           
+            <nav class="header-main_nav"> 
+                 <!-- the ul is not a flex item, we will just give it a left margin and remove bullet points (list-style if not done in reset or normalize file)  -->
+                <ul class="navigation">
+                    <!-- we will give this a value of display: inline and float left so it's in a row rather than default column list and move it up close to position next to logo in the header  -->
+                    <li>
+                        <!-- the anchor tag is where we style the text and links -->
+                     <a href="index.html" target="_blank">Home</a>
+                    </li>
+                    <li>
+                     <a href="rentals.html" target="_blank">Rentals</a>
+                    </li> 
+                    <li>
+                     <a href="reservations.html" target="_blank">Reservations</a>
+                    </li> 
+                    <li>
+                     <a href="contact.html" class="current" target="_blank">Contact</a>
+                    </li>
+                 </ul>
+            </nav>    
+        </div>
+        <!-- this is both a flex 'item' and also a flex 'container', because we want to align the social media icons as flex items -->
+        <div class="header-main_social-media">
+            <!-- these will be flex items -->
+            <a href="https://www.facebook.com"><div class="header-main_social-media_fb"></div></a>
+            <a href="https://www.instagram.com"><div class="header-main_social-media_in"></div></a>
+        </div>
+        <div class="hamburger-menu active" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </header>
+    <main>
+   
+    
+</main> 
+   
+    <footer class="grid-area-footer">           
+    <p>© <span id="copyright"></span> Michelle Markham | Utah USA <br>Last Modified:
+    <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/getdates.js">
+    </script>
+    <script src="scripts/hamburger.js">
+    </script>
+    <script src="scripts/darkmode.js"></script>
+    <script src="scripts/weather.js"></script>
+</body>
+</html>
