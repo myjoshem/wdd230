@@ -30,14 +30,14 @@
 <body class="grid-container-areas">
     <!-- this will be our flex container -->
     <header class="header-main grid-area-header"> 
-        <div class="header-main_weather">
-            <div class="current-temp" id="current-temp">
-                <img id="weather-icon" src="" alt="">
-            </div>
-            <div id="current-humidity">
-            </div>
-            <span id="weather-description"></span>
-          </div>
+            <div class="header-main_weather">
+                <div class="current-temp" id="current-temp">
+                    <img id="weather-icon" src="" alt="">
+                </div>
+                <div id="current-humidity">
+                </div>
+                <span id="weather-description"></span>
+              </div>
         <!-- the next div and its siblings will be flex 'items', direct children of 'header-main' class container -->
         <!-- because the 'header-main_logo' class div also has 'children', it will ALSO be a flex container -->
         <div class="header-main_logo">
@@ -60,7 +60,7 @@
                      <a href="reservations.html" target="_blank">Reservations</a>
                     </li> 
                     <li>
-                     <a href="contact.html" target="_blank">Contact</a>
+                     <a href="contact.html" class="current" target="_blank">Contact</a>
                     </li>
                  </ul>
             </nav>    
@@ -78,40 +78,13 @@
         </div>
     </header>
     <main>
-        <!-- my hero image -->
-<p>from <strong><a href="https://pxhere.com/en/photo/1187493?utm_content=clipUser&utm_medium=referral&utm_source=pxhere">PxHere</a></strong></p>
-   
-<a href="https://www.flaticon.com/free-icons/location" title="location icons">Location icons created by Freepik - Flaticon</a></main>   
-<a href="https://www.flaticon.com/free-icons/pin" title="pin icons">Pin icons created by Freepik - Flaticon</a>
+        <h1>Scoots Reservation Confirmation</h1>
+        <p>Thanks for making a reservation request with Scoots. We look forward to working with you to make your visit to Cozumel memorabe.</p>
 
-
-- Graphics Title: 1f6f5.svg
-- Graphics Author: Copyright 2020 Twitter, Inc and other contributors (https://github.com/twitter/twemoji)
-- Graphics Source: https://github.com/twitter/twemoji/blob/master/assets/svg/1f6f5.svg
-- Graphics License: CC-BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
-
-    <footer class="grid-area-footer">   
     
-      
-          <div class="locations">
-            <input type="radio" id="location1" name="location" checked>
-            <label for="location1">
-              <h3>Location 1</h3>
-              <p>123 Main Street</p>
-              <p>City, Country</p>
-              <p>Phone: (123) 456-7890</p>
-              <p>Email: location1@example.com</p>
-            </label>
-      
-            <input type="radio" id="location2" name="location">
-            <label for="location2">
-              <h3>Location 2</h3>
-              <p>456 Park Avenue</p>
-              <p>City, Country</p>
-              <p>Phone: (987) 654-3210</p>
-              <p>Email: location2@example.com</p>
-            </label>
-          </div>        
+</main> 
+   
+    <footer class="grid-area-footer">           
     <p>© <span id="copyright"></span> Michelle Markham | Utah USA <br>Last Modified:
     <span id="lastModified"></span></p>
     </footer>

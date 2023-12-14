@@ -1,0 +1,110 @@
+:root {
+    /* Color scheme variables */
+    --color-primary: #002366;    /* deep, rich - Main brand color*/
+    --color-secondary: #FFD700;  /* contrast to primary but also a 'rich/deep' tone - Secondary color for accents or highlights */
+    --color-accent: #FF7F50;     /* bright, calls attention, use sparingly - Accent color for specific elements */
+    --color-neutral: #D3D3D3;    /* light, ie. taupe, grays, off-whites - Neutral color for backgrounds or borders */
+    /* --color-filter_lighter: brightness(150%) contrast(120%); 
+    --color-filter_darker: filter: brightness(60%) contrast(80%);  */
+
+    /* FONTS */
+    --base-fs: 16px;
+    --line-height: 1.5;
+  }
+
+/* Form Styles */
+.grid-area-main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+.form-reservations {
+    display: grid;
+    gap: 20px;
+  } 
+
+  .form-fieldset {
+    margin: 2rem 0;
+    border: 1px solid #445ba9;
+    border-radius: 10px;
+    padding: 0.5rem 2%;
+  }
+
+  .form-legend {
+    color: #445ba9;
+    margin: 0 1rem;
+    padding: 0 0.5rem;
+  }
+
+  .form-label-top,
+  .form-div {
+    display: block;
+    padding-top: 1rem;
+    color: --color-accent;
+    font-size: 0.8rem;
+  }
+
+  .form-label-top input,
+  .form-label-top select {
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: 0.75rem;
+    color: var(--color-primary);
+    width: 100%;
+    max-width: 30rem;
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s;
+  }
+
+  .form-label-top:hover input,
+  .form-label-top:hover select {
+    border-color: --color-primary;
+  }
+
+  .form-label-top:focus-within input,
+  .form-label-top:focus-within select {
+    outline: none;
+    border-color: #4caf50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+  }
+
+  .form-label-side-by-side {
+    display: block;
+    padding: 0.75rem 0;
+    color:;
+  }
+
+  .form-input-submit {
+    border: none;
+    background-color: var(--color-primary);
+    color: white;
+    border-radius: 1rem;
+    padding: 0.75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: fit-content;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .form-input-submit:hover {
+    background-color: var(--color-accent);
+    color: var(--color-primary);
+  }
+
+  .form-label-top input:required {
+    border-left: red solid 6px;
+  }
+
+  .form-label-top input:required:valid {
+    border-left: green solid 6px;
+  }
+
+  @media (max-width: 768px) {
+    main {
+      max-width: 100%;
+    }
+  }

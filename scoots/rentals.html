@@ -19,7 +19,9 @@
 
     <!-- CSS and Normalize/Resets -->
     <link href="styles/reset.css" rel="stylesheet" >
+    <link href="styles/reservations.css" rel="stylesheet">
     <link href="styles/scoots-base.css" rel="stylesheet">
+  
     <link href="styles/scoots-medium.css" rel="stylesheet">
     <link href="styles/scoots-large.css" rel="stylesheet">
 
@@ -80,7 +82,7 @@
     <main class="grid-area-main">
         <section class="grid-section-rentals">
             <div class="rental-card scooter">
-              <div class="card-image"></div>
+              <div class="card-image" style="background-image: url(./images/2023-metropolitan-blue_metallic-650x380.webp);"></div>
               <div class="card-info">
                 <h3>Honda Metropolitan (49cc)</h3>
                 <p>2 person</p>
@@ -89,7 +91,7 @@
           </section>
           <section class="grid-section-rentals">
             <div class="rental-card scooter">
-              <div class="card-image"></div>
+              <div class="card-image" style="background-image: url(./images/hondaDioScooter.webp);"></div>
               <div class="card-info">
                 <h3>Honda Dio (110cc)</h3>
                 <p>2 person</p>
@@ -131,39 +133,55 @@
                 <p>Open air, manual, 4 person</p>
               </div>
             </div>
-          </section>
-          <section class="rental-pricing">
-            <h2>Scoots Rental Pricing</h2>
-            <table>
-              <!-- Table headers -->
-              <thead>
-                <tr>
-                  <th colspan="2"></th>
-                  <th colspan="2">Reservation</th>
-                  <th colspan="2">Walk-in</th>
-                </tr>
-                <tr>
-                  <th>Rental Type</th>
-                  <th>Max. Persons</th>
-                  <th>Half Day (3-hrs)</th>
-                  <th>Full Day</th>
-                  <th>Half Day (3-hrs)</th>
-                  <th>Full Day</th>
-                </tr>
-              </thead>
-              <!-- Table body appended with JavaScript -->
-              <tbody></tbody>
-            </table>
-          </section>
-   
-    
+          </section>    
 </main> 
+<div class="grid-area-submain">
+    <div class="rental-pricing">
+      <h2>Scoots Rental Pricing</h2>
+      <table>
+        <!-- Table headers -->
+        <thead>
+          <tr>
+            <th colspan="2"></th>
+            <th colspan="2">Reservation</th>
+            <th colspan="2">Walk-in</th>
+          </tr>
+          <tr>
+            <th>Rental Type</th>
+            <th>Max. Persons</th>
+            <th>Half Day (3-hrs)</th>
+            <th>Full Day</th>
+            <th>Half Day (3-hrs)</th>
+            <th>Full Day</th>
+          </tr>
+        </thead>
+        <!-- Table body appended with JavaScript -->
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <div class="rental-services">
+        <a href="reservations.html"><button class="form-input-submit">Make Reservation</button></a>
+        <h2 id="rentalInfo">Rental Services and Agreements</h2></>
+      <ul>
+        <li>A $50 security deposit is required to confirm reservations.</li>
+        <li>A valid driver's license is required at the time of rental.</li>
+        <li>No one under the age of 12 years of age is allowed to ride on the scooters.</li>
+        <li>Fuel charge is not included.</li>
+        <li>Unlimited mileage.</li>
+        <li>Liability insurance is included.</li>
+        <li>Damage insurance is available for purchase.</li>
+        <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+        <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or Venmo.</li>
+      </ul>
+    </div>
+  </div>
    
     <footer class="grid-area-footer">           
     <p>© <span id="copyright"></span> Michelle Markham | Utah USA <br>Last Modified:
     <span id="lastModified"></span></p>
     </footer>
-    <script src="scripts/getdates.js">
+    <script src="scripts/dates.js">
     </script>
     <script src="scripts/hamburger.js">
     </script>

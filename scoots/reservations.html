@@ -20,6 +20,7 @@
     <!-- CSS and Normalize/Resets -->
     <link href="styles/reset.css" rel="stylesheet" >
     <link href="styles/scoots-base.css" rel="stylesheet">
+    <link href="styles/reservations.css" rel="stylesheet">
     <link href="styles/scoots-medium.css" rel="stylesheet">
     <link href="styles/scoots-large.css" rel="stylesheet">
 
@@ -77,15 +78,100 @@
             <div class="bar"></div>
         </div>
     </header>
-    <main>
-        
+    <main class="grid-area-main">
+        <a href="rentals.html#rentalInfo"><button class="form-input-submit">Rental Info</button></a>
+        <form class="form-reservations" method="get" action="reservations-landingpage.html">
+            <h1>Scoots Reservation Form</h1> 
+          <fieldset class="form-fieldset">
+            <legend class="form-legend">Client Information</legend>
+      
+            <label class="form-label-top" for="fname">First Name*
+              <input type="text" id="fname" name="fname" required>
+            </label>
+      
+            <label class="form-label-top" for="lname">Last Name*
+              <input type="text" id="lname" name="lname" required>
+            </label>
+      
+            <label class="form-label-top" for="phone">Phone
+              <input type="tel" id="phone" name="phone" placeholder="1235551234">
+            </label>
+      
+            <label class="form-label-top" for="address">Address
+              <input type="text" id="address" name="address">
+            </label>
+      
+            <label class="form-label-top" for="city">City
+              <input type="text" id="city" name="city">
+            </label>
+      
+            <label class="form-label-top" for="state">State
+              <input type="text" id="state" name="state">
+            </label>
+      
+            <label class="form-label-top" for="country">Country
+              <input type="text" id="country" name="country">
+            </label>
+      
+            <label class="form-label-top" for="email">Email
+              <input type="email" id="email" name="email" placeholder="you@gmail.com">
+            </label>
+      
+            <label class="form-label-top" for="url">Website
+              <input type="url" id="url" name="url" placeholder="http://">
+            </label>
+      
+          </fieldset>
+      
+          <fieldset class="form-fieldset">
+            <legend class="form-legend">Rental Details</legend>
+      
+            <label class="form-label-top" for="cruiseLine">Cruise Line
+              <select id="cruiseLine" name="cruiseLine">
+                <option value="" default>Select</option>
+                <option value="notApplicable">Not Applicable</option>
+                <option value="cruiseLine1">Cruise Line 1</option>
+                <option value="cruiseLine2">Cruise Line 2</option>
+                <option value="cruiseLine3">Cruise Line 3</option>
+              </select>
+            </label>
+      
+            <label class="form-label-top" for="completedate">Date of Reservation
+              <input type="date" id="completedate" name="completedate">
+            </label>
+      
+            <label class="form-label-top" for="rentalTypes">Rental Types, hold down control key to select more than one option
+              <select id="rentalTypes" name="rentalTypes" multiple>
+                <option value="scooterMetro">Scooter - Honda Metropolitan (49cc) - 1 person</option>
+                <option value="scooterDio">Scooter - Honda Dio (110cc) - 2 person</option>
+                <option value="scooterPCX150">Scooter - Honda PCX150 (149cc) - 2 person</option>
+                <option value="atvPioneer">Side-by-Side ATVs - Honda Pioneer 1000 - 4 person</option>
+                <option value="jeep4Door">Jeep Wrangler - 4 door manual with A/C - 5 person</option>
+                <option value="jeep2Door">Jeep Wrangler - 2 door      
+                </select>
+              </label>
+              <div>
+                <label for="specialAccommodations">Special Accommodations: <input type="checkbox" id="specialAccommodations" name="specialAccommodations"></label>
+              </div>
+              <textarea id="specialAccommodationsDetails" name="specialAccommodationsDetails" rows="4" placeholder="Provide details..."></textarea>
+          
+              <div>
+                <label for="transportation">Transportation to/from Rental: <input type="checkbox" id="transportation" name="transportation"></label>
+              </div>
+              <textarea id="transportationDetails" name="transportationDetails" rows="4" placeholder="Provide details..."></textarea>
+          </fieldset>
+          <input class="form-input-submit" type="submit" value="Submit Reservation">
+          </form>
+      
+          
+      
     </main>   
    
     <footer class="grid-area-footer">           
     <p>© <span id="copyright"></span> Michelle Markham | Utah USA <br>Last Modified:
     <span id="lastModified"></span></p>
     </footer>
-    <script src="scripts/getdates.js">
+    <script src="scripts/dates.js">
     </script>
     <script src="scripts/hamburger.js">
     </script>

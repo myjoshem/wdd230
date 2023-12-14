@@ -31,17 +31,18 @@ body {
 main {
     max-width: 1200px; /* Adjust the maximum width as needed */
     margin: 0 auto;    /* Center the main content */
-    padding: 20px;     /* Add some padding for spacing */
+
 }
 
 /* Grid stuff */
 .grid-container-areas {
     display: grid;
-    grid-template-rows: auto auto 1fr auto;
+    grid-template-rows: auto auto auto auto auto;
     grid-template-areas:
         "header"
         "hero"
         "main"
+        "submain"
         "footer";
     min-height: 100vh; /* just in case svh is not supported*/
     min-height: 100svh;
@@ -67,7 +68,7 @@ main {
     background-position: center;
     text-align: left;
     padding: 10px;
-    border-radius: 50px;
+    border-radius: 10px;
     color: #fff;
     aspect-ratio: 16/9;
     display: flex;
@@ -90,6 +91,21 @@ main {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
+}
+
+.grid-area-main.res {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.grid-area-submain {
+    grid-area: submain;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+
 }
 
 .grid-area-footer {
@@ -412,6 +428,7 @@ main {
       padding: 10px;
       display: block;
       text-align: center;
+      background-color: var(--color-primary);
       color: white;
       text-decoration: none;
     }
@@ -453,7 +470,7 @@ main {
   flex-basis: 100%; 
 }
   
-    input[type="radio"] {
+    #location2 > input[type="radio"] {
     display: none; /* Hide the default radio button because we are going to make it 'select' the map and change background color*/
   }
   /* TODO give this a less generic class */
@@ -473,12 +490,12 @@ main {
   }
  /* RENTALS PAGE */
 
- .grid-section-rentals {
-    /* display: grid;
+ /* .grid-section-rentals {
+    display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px; */
+    gap: 20px;
   }
-  
+   */
   .rental-card {
     border: 1px solid #ccc;
     border-radius: 8px;
@@ -486,12 +503,19 @@ main {
   }
   /* TODO find photo of vehicles */
   .card-image {
-    background-image: url();
+    background-image: url(../images/2023-metropolitan-blue_metallic-650x380.webp);
     height: 200px;
     background-size: cover;
     background-position: center;
   }
   
+  card-image:nth-of-type(2) {
+    background-image: url(../images/new-honda-dio-110-in-sports-red.webp);
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+  }
+
   .card-info {
     padding: 15px;
   }
@@ -509,4 +533,78 @@ main {
     }
   }
 
+  /* TODO  */
+  /* TABLE FOR RENTALS PAGE */
+   /* Center the content on the page - becuz, that's why*/
+   .center-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    height: 100svh;
+  }
+
+  /* Style the table within the rental-pricing section */
+  .rental-pricing, .rental-services {
+    align-self: center;
+    max-width: calc(100% - 20px);
+    min-width: 400px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+
+  /* Style the main top table title */
+  .rental-pricing table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 400px;
+    margin-top: 20px;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+
+  /* Style table headers for heavensake */
+  .rental-pricing th, .rental-pricing td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+
+  /* Alternate row background color for better readability - me likey*/
+  .rental-pricing tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+
+  /* Add responsive styling for smaller screens - duh */
+  @media (max-width: 768px) {
+    .rental-pricing, .rental-services {
+      max-width: 100%;
+    }
+
+    .rental-pricing table {
+      display: block;
+      overflow-x: auto;
+    }
+
+    .rental-pricing th, .rental-pricing td {
+      white-space: nowrap;
+    }
+  }
+
+  /* Style for the rental services container */
+  .rental-services ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .rental-services li {
+    margin-bottom: 10px;
+  }
+
+  /* RESERVATION PAGE - FORM */
+
+   /* Form Styles */
   

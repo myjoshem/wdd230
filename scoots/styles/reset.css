@@ -30,9 +30,9 @@ a, button {
 }
 
 /* Remove list styles (bullets/numbers) */
-ol, ul, menu {
+/* ol, ul, menu {
     list-style: none;
-}
+} */
 
 /* For images to not be able to exceed their container */
 img {
@@ -44,14 +44,14 @@ img {
 table {
     border-collapse: collapse;
 }
-
-/* Safari - solving issue when using user-select:none on the <body> text input doesn't working */
-input, textarea {
+/* 
+Safari - solving issue when using user-select:none on the <body> text input doesn't working */
+/* input, textarea {
     -webkit-user-select: auto;
     user-select: auto;
-}
+} */
 
 /* revert the 'white-space' property for textarea elements on Safari */
-textarea {
+/* textarea {
     white-space: revert;
-}
+} */

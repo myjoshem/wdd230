@@ -112,86 +112,33 @@ const data = [{
         }
     ]
 }
-    // Sample data here
+   
   ];
   
-  const tbody = document.querySelector('.rental-pricing tbody');
+ // Function to generate table rows
+function generateTableRows() {
+    const tbody = document.querySelector('.rental-pricing tbody');
+    
+    data[0].pricingTable.forEach(rentalType => {
+      for (const key in rentalType) {
+        if (rentalType.hasOwnProperty(key)) {
+          const rowData = rentalType[key][0];
   
-  data.forEach(item => {
-    const row = document.createElement('tr');
-    row.innerHTML = `
-      <td>${item.rentalType}</td>
-      <td>${item.maxPersons}</td>
-      <td>${item.reservationHalfDay}</td>
-      <td>${item.reservationFullDay}</td>
-      <td>${item.walkInHalfDay}</td>
-      <td>${item.walkInFullDay}</td>
-    `;
-    tbody.appendChild(row);
-  });
-
-
-// async function apiFetch() {
-//     try {
-//         const response = await fetch(url);
-//         if(response.ok) {
-//             const data = await response.json();
-//            /*  console.log(JSON.stringify(data));  *///testing only
-//              displayResults(data); // uncomment after testing
-//         } else {
-//             throw Error(await response.text());
-//         }
-//      } catch (error) {
-//         console.group(error);
-//      }
-// }
-
-// apiFetch();
-
-// function displayResults(data) {
-//     currentTemp.innerHTML = `${Math.trunc(data.main.temp)}&deg;F`;
-//     currentHumidity.innerHTML = `Humidity: ${data.main.humidity}%`;
-//     const icon = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
-//     let desc = `${data.weather[0].description.toUpperCase()}`;
-//     const iconImage = document.createElement('img');
-//     iconImage.id = 'weather-icon';
-//     iconImage.src = icon;
-//     iconImage.alt = 'Weather Icon';
-//     currentTemp.appendChild(iconImage);
-//     weatherDescription.innerHTML = desc;
-
-
-
-//     const baseURL = "https://myjoshem.github.io/wdd230";
-//     const linksURL = "https://myjoshem.github.io/wdd230/data/links.json";
-//     const lessonList = document.querySelector("#links");
-    
-//     async function getLinks() {
-//         const response = await fetch(linksURL);
-//         const data = await response.json();
-//         console.log(data);
-//         displayLinks(data.lessons);
-//     }
-    
-//     getLinks();
-    
-
-
-// //pass in the data.lessons JSON array from our getLinks() function
-// const displayLinks = (weeks) => {
-//     //the first for loop takes each lesson or WEEK from the json array and creates a li element.
-//     weeks.forEach((week) => {
-//         let listItem = document.createElement("li");    
-//         listItem.textContent = `Lesson ${week.lesson}: `;
-//          //this second, nested for loop will iterate through the 'links' array within each lesson
-//         week.links.forEach((link) => {
-//             let linkList = document.createElement("a");
-//             linkList.setAttribute('href', `${link.url}`);
-//             linkList.setAttribute('title', `${link.tooltip}`);
-//             linkList.setAttribute('target', `${link.target}`);
-//             linkList.textContent = `  ${link.title}   |   `;
-//             listItem.appendChild(linkList);
-//             lessonList.appendChild(listItem)
-//         }     
-//     )});
-// }
+          const row = document.createElement('tr');
+          row.innerHTML = `
+            <td>${rowData.description}</td>
+            <td>${rowData.maxPersons}</td>
+            <td>${rowData.reservation[0].halfDay}</td>
+            <td>${rowData.reservation[0].fullDay}</td>
+            <td>${rowData.walkIn[0].halfDay}</td>
+            <td>${rowData.walkIn[0].fullDay}</td>
+          `;
+          
+          tbody.appendChild(row);
+        }
+      }
+    });
+  }
+  
+  // Don't forget to Call the function, ahem
+  generateTableRows();
