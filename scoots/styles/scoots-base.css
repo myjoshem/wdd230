@@ -15,9 +15,16 @@
   
 
   /* UTILITY CLASSES */
+  h2 {
+    font-size: 2em;
+  }
 
   .current::before {
     content: "🛵";
+  }
+
+  .current {
+    text-decoration: underline;
   }
 
 body {
@@ -26,6 +33,7 @@ body {
     font-size: var(--base-font-size);
     line-height: calc(var(--base-fs) * var(--line-height));
     color: var(--color-primary);
+    background-color: antiquewhite;
 }
 
 main {
@@ -178,8 +186,11 @@ main {
 .vehicle-cards {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    align-items: end;
     flex-wrap: wrap;
+    gap: 10px;
+   
+  
 }
 
 .card {
@@ -187,12 +198,20 @@ main {
     margin-bottom: 20px;
     padding: 20px;
     border: 1px solid #ccc;
+    background-color: white;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    align-items: stretch;
 }
 
 .card h2 {
-    font-size: 1.3em;
+    font-size: 1.5em;
     line-height: 1em;
     margin-bottom: 15px;
+  
 }
 
 .card p {
@@ -214,6 +233,9 @@ main {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    justify-self: flex-end;
+    /* align-self: flex-end; */
+   
       
 }
 
@@ -328,6 +350,7 @@ main {
                 }
                 .header-main_nav ul li a:hover {
                     color: var(--color-accent);
+                    text-decoration: underline;
                 }
 
 /* 2nd flex item under 'header-main' and also a flex container so we can style social media icon items */
@@ -430,7 +453,7 @@ main {
       text-align: center;
       background-color: var(--color-primary);
       color: white;
-      text-decoration: none;
+      
     }
   
     .hamburger-menu {
@@ -500,17 +523,17 @@ main {
     border: 1px solid #ccc;
     border-radius: 8px;
     overflow: hidden;
+    background-color: white;
   }
-  /* TODO find photo of vehicles */
+
   .card-image {
-    background-image: url(../images/2023-metropolitan-blue_metallic-650x380.webp);
     height: 200px;
     background-size: cover;
     background-position: center;
   }
-  
-  card-image:nth-of-type(2) {
-    background-image: url(../images/new-honda-dio-110-in-sports-red.webp);
+
+  .card-image-home {
+    width: auto;
     height: 200px;
     background-size: cover;
     background-position: center;
@@ -602,6 +625,10 @@ main {
 
   .rental-services li {
     margin-bottom: 10px;
+  }
+
+  .rental-services h2 {
+    padding-bottom: 1em;
   }
 
   /* RESERVATION PAGE - FORM */

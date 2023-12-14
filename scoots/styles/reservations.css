@@ -22,7 +22,17 @@
 .form-reservations {
     display: grid;
     gap: 20px;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid #445ba9;
+    border-radius: 10px;
   } 
+
+  .form-reservations h1 {
+    padding: 10px;
+    font-size: 2em;
+    text-align: center;
+  }
 
   .form-fieldset {
     margin: 2rem 0;
@@ -101,6 +111,11 @@
 
   .form-label-top input:required:valid {
     border-left: green solid 6px;
+  }
+
+  #resTopBtn {
+    margin-top: 1em;
+    align-self: center;
   }
 
   @media (max-width: 768px) {
