@@ -189,8 +189,6 @@ main {
     align-items: end;
     flex-wrap: wrap;
     gap: 10px;
-   
-  
 }
 
 .card {
@@ -202,9 +200,10 @@ main {
     min-height: 300px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-items: center;
     align-content: center;
     align-items: stretch;
+    flex: 1;
 }
 
 .card h2 {
@@ -212,6 +211,13 @@ main {
     line-height: 1em;
     margin-bottom: 15px;
   
+}
+
+.card > div {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    flex: 1;
 }
 
 .card p {
@@ -234,6 +240,33 @@ main {
     overflow: hidden;
     text-overflow: ellipsis;
     justify-self: flex-end;
+    /* align-self: flex-end; */
+   
+      
+}
+
+  }
+
+.card p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+.card-button {
+    display: inline-block;
+    width: fit-content;
+    padding: 6px 15px;
+    background-color: #002366;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+    border-radius: 10px;
+    transition: background-color 0.3s ease; /* Adding a smooth transition */
+    white-space: nowrap;
+    overflow: hidden;
+    /* justify-self: flex-end; */
+    margin-top: auto;
     /* align-self: flex-end; */
    
       
@@ -532,12 +565,7 @@ main {
     background-position: center;
   }
 
-  .card-image-home {
-    width: auto;
-    height: 200px;
-    background-size: cover;
-    background-position: center;
-  }
+
 
   .card-info {
     padding: 15px;
